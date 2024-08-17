@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@700;800&family=Calistoga&family=Dancing+Script:wght@400..700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 100%;
+    padding: 4px 0px;    
+    background-color: #ffffff;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding: 0px 20px 0px 0px;
+    cursor: pointer;
+}
+.navbar .app-logo h2{
+    padding: 10px 30px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    font-family: "Zain", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.navbar-center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.search-input{
+    width: 55%;
+    height: 12px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    padding-right: 20px; 
+}
+.navbar-right-add-items{    
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.navbar-right img{
+    width: 29px;
+    height: 29px;
+    align-items: center;
+}
+.navbar-right h2{
+    font-family:'Zain', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #333;
+    align-items: center;
+}
+.navbar-right .sidebar-icon{
+    width: 29px;
+    height: 29px;
+    align-items: center;
+}

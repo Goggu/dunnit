@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Asap+Condensed:wght@700;800&family=Calistoga&family=Dancing+Script:wght@400..700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.each-item-img-container{
+
+}
+.each-item-image{
+    max-width: 100%;
+    max-height: 150px;
+    overflow-y: hidden;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.each-item{
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+
+.post-owner{
+    font-size: medium;
+    font-family: "Roboto", serif;
+    color: #E63946;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+.post-title{
+    font-size: 20px;
+    font-family: "Calistoga", sans-serif;  
+    font-weight: 400;
+    color: #333;
+    margin-top: 8px;
+}

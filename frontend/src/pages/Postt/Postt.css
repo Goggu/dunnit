@@ -1,0 +1,54 @@
+.article-page{
+    display: flex;
+    padding-right: 0;
+    width: 195vh;
+}
+.current-article{
+    
+    flex: 1;
+    max-width: 140vh;
+    height: 100vh;   
+    
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.post-title{
+    margin-left: 10px;
+}
+
+.like-dislike-comment-share{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    justify-content: end;
+    padding: 34px 40px;
+    gap: 13px;
+}
+.like-icon{
+    width: 34px;
+    height: 34px;
+}
+.dislike-icon{
+    width: 34px;
+    height: 34px;
+}
+.comment-icon{
+    width: 32px;
+    height: 32px;
+}
+.share_icon{
+    width: 34px;
+    width: 34px;
+}
+.save-article-icon{
+    width: 34px;
+    height: 34px;
+}
+
+.similar-articles{   
+    padding-right: 20px;
+    margin-right: 20px;
+}
+    

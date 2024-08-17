@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script:wght@400..700&display=swap');
+
+.each-item-container{
+    width: auto;
+    height: auto; 
+    overflow: hidden;
+    font-family: "Calistoga", serif;
+    align-items: center;
+    padding: 0px;
+  }
+  .each-item-img-container{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+  .each-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-heading {
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+  }
+  
