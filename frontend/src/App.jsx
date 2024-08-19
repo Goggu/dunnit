@@ -11,13 +11,11 @@ const App = () => {
   const [selectedMenu, setSelectedMenu] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
 
+  
   return (
     <Box>
-      <Navbar selectedMenu={selectedMenu} toggleSidebar={toggleSidebar} />
+      <Navbar selectedMenu={selectedMenu}  />
 
       <Box sx={{ display: 'flex' }}>
         {sidebarOpen && (
@@ -33,7 +31,7 @@ const App = () => {
               boxShadow: 1,
             }}
           >
-            <Sidebar selectedMenu={selectedMenu} setSidebarOpen={setSidebarOpen} />
+            <Sidebar selectedMenu={selectedMenu}  />
           </Box>
         )}
 
