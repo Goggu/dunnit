@@ -15,9 +15,14 @@
 .navbar-left{
     display: flex;
     align-items: center;
-    gap: 0px;
-    padding: 0px 20px 0px 0px;
+    gap: 10px;
+    padding: 0px 0px 20px 0px;
     cursor: pointer;
+}
+.navbar-left .sidebar-icon{
+    width: 29px;
+    height: 29px;
+    align-items: center;
 }
 .navbar .app-logo h2{
     padding: 10px 30px;
@@ -70,10 +75,5 @@
     font-weight: 400;
     font-size: 25px;
     color: #333;
-    align-items: center;
-}
-.navbar-right .sidebar-icon{
-    width: 29px;
-    height: 29px;
     align-items: center;
 }
