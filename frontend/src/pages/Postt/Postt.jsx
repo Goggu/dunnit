@@ -25,9 +25,8 @@ const Postt = () => {
 
   return (
       <div className='article-page'>
-
-        <div className='current-article'>
-          <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: -4, marginBottom: 2, marginRight: 0 }}>
+        
+          <Box className='current-article' component="main" sx={{ flexGrow: 1, p: 3, marginTop: -4, marginBottom: 2, marginRight: 0 }}>
             <div className='post-title' >
               <PostHeader id={article._id} namee={article.namee} owner={article.owner} profilepic={article.profilepic} datee={article.datee} />
             </div>
@@ -42,11 +41,10 @@ const Postt = () => {
               <img className='save-article-icon' src={assets.save_article_icon} alt='' />
             </div>        
           </Box>
-        </div>
 
-        <div className='similar-articles'>
+        <Box className='similar-articles'>
           {<SimilarPosts selectedMenu={setSelectedMenu} />}
-        </div>
+        </Box>
         
       </div>
   );
