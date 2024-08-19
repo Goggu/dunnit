@@ -8,7 +8,11 @@ const Navbar = ({selectedMenu, toggleSidebar}) => {
 
   return (
     <div className="navbar">
+      
       <div className='navbar-left'>        
+        <IconButton onClick={toggleSidebar}>
+          <img src={assets.sidebar_icon} className='sidebar-icon' alt='' />
+        </IconButton>
         <Link to="/" className='app-logo'>
           <h2>DunnIt</h2>
         </Link>
@@ -25,12 +29,14 @@ const Navbar = ({selectedMenu, toggleSidebar}) => {
             <h2>write</h2>
           </div>
         </Link>
-        <IconButton onClick={toggleSidebar}>
-          <img src={assets.sidebar_icon} className='sidebar-icon' alt='' />
+        <IconButton>
+          <img src={assets.message_icon} className='message-icon' alt='' />
         </IconButton>
+        <IconButton>
+          <img src={assets.notification_icon} className='notification-icon' alt='' />
+        </IconButton>        
       </div>
 
-       {/* <Menubar isOpen={isMenuOpen} toggleMenu={toggleMenu} /> */}
     </div> 
   )
 }
