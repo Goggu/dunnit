@@ -2,7 +2,7 @@
 import React from 'react'
 import './Eachitem.css'
 
-const Eachitem = ({id,image,namee,owner}) => {
+const Eachitem = ({id,image,namee,owner,profilepic}) => {
   return (
     <div className='each-item'>      
       <div>
