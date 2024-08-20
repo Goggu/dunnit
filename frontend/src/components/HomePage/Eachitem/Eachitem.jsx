@@ -11,8 +11,9 @@ const Eachitem = ({id,image,namee,owner}) => {
       <div className='each-item-img-container'>
         <img className='each-item-image' src={image} alt='' />
       </div>      
-      <div>
-        <p className='post-owner'>{owner}</p>
+      <div className='profile-info'>
+        <img className='profile-pic' src={profilepic} alt='' />
+        <p className='profile-name'>{owner}</p>
       </div>
     </div>
   )
