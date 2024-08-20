@@ -12,7 +12,7 @@ const Explore = () => {
     <div className='post-display-list'>
       {post_list.map((item) =>{
         return <Link to={`/article/${item._id}`} key={item._id}> {/* Wrap Eachitem with Link */}
-          <Eachitem id={item._id} namee={item.namee} owner={item.owner} image={item.image} />
+          <Eachitem id={item._id} namee={item.namee} owner={item.owner} image={item.image} profilepic={item.profilepic} />
         </Link>
       })}
     </div>
