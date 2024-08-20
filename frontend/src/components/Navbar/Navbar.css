@@ -6,10 +6,11 @@
 .navbar{
     position: fixed;
     display: flex;
+    height: 64px;
     justify-content: space-between;
     align-items: center;  
     width: 100%;
-    padding: 4px 0px;    
+    padding: 3px 0px;    
     background-color: #ffffff;
 }
 .navbar-left{
@@ -23,11 +24,13 @@
     width: 29px;
     height: 29px;
     align-items: center;
+    padding-top: 16px;
+    padding-left: 10px;
 }
 .navbar .app-logo h2{
-    padding: 10px 30px;
-    margin-top: -4px;
-    margin-bottom: -4px;
+    padding: 28px 30px 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-family: "Zain", sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -40,11 +43,11 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 .search-input{
     width: 55%;
-    height: 12px;
+    height: 13px;
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-radius: 15px;
