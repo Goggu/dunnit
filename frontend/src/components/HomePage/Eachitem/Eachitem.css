@@ -19,7 +19,6 @@
     margin-bottom: 4px;
 }
 
-
 .each-item-image{    
     max-height: 150px;
     max-width: 280px;
@@ -27,11 +26,22 @@
     border-radius: 5px 5px 0px 0px;    
     margin-left: 8px;
 }
-.post-owner{
-    font-size: medium;
-    font-family: "Roboto", serif;
-    color: #3f3f3f;
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 2px;
     margin-top: 4px;
     margin-left: 8px;
 }
-
+.profile-pic{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+.profile-name{
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #3f3f3f;
+}
