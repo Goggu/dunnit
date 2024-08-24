@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Dancing+Script:wght@400..700&display=swap');
 
 .each-item-container{
     width: auto;
     height: auto; 
     overflow: hidden;
-    font-family: "Calistoga", serif;
+    font-family: "Roboto", sans-serif;
     align-items: center;
     padding: 0px;
   }
@@ -20,11 +20,11 @@
   }
   
   .post-heading {
-    padding: 0px;
+    padding-left: 6px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
-    margin-top: 8px;
+    margin-top: 4px;
     margin-bottom: 10px;
     margin-left: 3px;
   }
