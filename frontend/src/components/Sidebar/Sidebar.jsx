@@ -1,27 +1,28 @@
 import './Sidebar.css';
 import { assets } from '../../assets/assets';
 import React from 'react';
-import { Box, List, ListItem, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 const Sidebar = ({ selectedMenu, setSidebarOpen }) => {
   const menuItems = [
-    { text: 'Home', path: '/' },    
-    { text: 'My Page', path: '/' },
-    { text: 'Bookmarks', path: '/' },
-    { text: 'Settings', path: '/' },
-    { text: 'Dark Mode', path: '/' },
+    { text: 'Home', path: '/', icon: <img src={assets.home_icon} className='icons-in-sidebar' alt='' /> },    
+    { text: 'Bookmarks', path: '/bookmarks', icon: <img src={assets.save_article_icon} className='icons-in-sidebar' alt='' /> },
+    { text: 'My Page', path: '/profile', icon: <img src={assets.profilepage_icon} className='icons-in-sidebar' alt='' /> },    
+    { text: 'Settings', path: '/', icon: <img src={assets.settingspage_icon} className='icons-in-sidebar' alt='' /> },
+    { text: 'Dark Mode', path: '/', icon: <img src={assets.dark_mode_icon} className='icons-in-sidebar' alt='' /> },
     // Add more menu items as needed
-  ];
+  ]; 
 
   return (
     <Box>
 
        <List>
-        {menuItems.map((item, index) => (
-          <ListItem button key={index} onClick={() => setSidebarOpen(false)}>
-            
-              <ListItemText className='menu-list' primary={item.text} />
-            
+        {menuItems.map((item, index) => ( 
+          <ListItem button key={index} component={Link} to={item.path} >      
+              <ListItemIcon className="custom-icon">{item.icon}</ListItemIcon>    
+              <ListItemText className='menu-list' primary={item.text} />            
           </ListItem>
         ))}
        </List>
@@ -31,3 +32,4 @@ const Sidebar = ({ selectedMenu, setSidebarOpen }) => {
 };
 
 export default Sidebar;
+
