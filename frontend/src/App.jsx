@@ -6,22 +6,26 @@ import Postt from './pages/Postt/Postt';
 import AddPost from './pages/AddPost/AddPost';
 import { Box } from '@mui/material';
 import Sidebar from './components/Sidebar/Sidebar';
+import Profile from './pages/Profile/Profile';
+import Bookmarks from './pages/Bookmarks/Bookmarks';
 
 const App = () => {
   const [selectedMenu, setSelectedMenu] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
 
-  
   return (
     <Box>
-      <Navbar selectedMenu={selectedMenu}  />
+      <Navbar selectedMenu={selectedMenu} toggleSidebar={toggleSidebar} />
 
       <Box sx={{ display: 'flex' }}>
-        {sidebarOpen && (
+      {sidebarOpen && (
           <Box
             sx={{
-              width: '220px',
+              width: '170px',
               position: 'fixed',
               top: '64px',
               left: 0,
@@ -29,17 +33,24 @@ const App = () => {
               zIndex: 1200,
               backgroundColor: 'white',
               boxShadow: 1,
-            }}
-          >
-            <Sidebar selectedMenu={selectedMenu}  />
+            }}>
+            <Sidebar selectedMenu={selectedMenu} setSidebarOpen={setSidebarOpen} />
           </Box>
         )}
 
-        <Box sx={{ marginLeft: sidebarOpen ? '200px' : 0, flex: 1, marginTop: '30px' }}>
+        <Box 
+          sx={{ 
+            marginLeft: sidebarOpen ? '120px' : 0, 
+            marginRight: sidebarOpen ? '20px' : 0,
+            flex: 1, 
+            marginTop: '55px', 
+          }}>
           <Routes>
             <Route path="/" element={<Homee />} />
             <Route path="/article/:id" element={<Postt />} />
             <Route path="/add-article" element={<AddPost />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
           </Routes>
         </Box>
       </Box>
