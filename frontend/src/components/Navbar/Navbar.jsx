@@ -8,7 +8,6 @@ const Navbar = ({selectedMenu, toggleSidebar}) => {
 
   return (
     <div className="navbar">
-      
       <div className='navbar-left'>        
         <IconButton onClick={toggleSidebar}>
           <img src={assets.sidebar_icon} className='sidebar-icon' alt='' />
@@ -37,6 +36,7 @@ const Navbar = ({selectedMenu, toggleSidebar}) => {
         </IconButton>        
       </div>
 
+       {/* <Menubar isOpen={isMenuOpen} toggleMenu={toggleMenu} /> */}
     </div> 
   )
 }
