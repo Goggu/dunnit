@@ -1,7 +1,8 @@
+
 .similar-posts-list{
-    
-    max-width: 280px;
-    
+    padding-left: 0px;
+    max-width: 260px;
+
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
     margin-top: 18px;
