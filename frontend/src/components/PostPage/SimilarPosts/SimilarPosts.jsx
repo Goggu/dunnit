@@ -15,6 +15,7 @@ const SimilarPosts = () => {
       {post_list.map((item) =>{
         return <Link to={`/article/${item._id}`} key={item._id}>     {/* Wrap Eachitem with Link */}
           <EachSimilarPost id={item._id} namee={item.namee} image={item.image} />
+          <hr />
         </Link>
       })}
 
