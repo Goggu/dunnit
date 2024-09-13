@@ -1,6 +1,5 @@
 import logo from './logo.png'
 import header_img from './header_img.jpeg'
-import dislike_icon from './dislike_icon.png'
 import like_icon from './like_icon.png'
 import Add_Post_Icon from './add_post_icon.png'
 import profile_pic from './profile_pic.png' 
@@ -40,7 +39,6 @@ export const assets = {
     sidebar_icon,
     header_img,
     like_icon,
-    dislike_icon,
     Add_Post_Icon,
     profile_pic,
     menubar_icon,
