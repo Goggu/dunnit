@@ -21,10 +21,7 @@ const Eachitem = ({ id, image, namee, owner, profilepic }) => {
         <img className='each-item-image' src={image} alt='' />
       </div>
       <div className='each-item-bottom'>
-        <div className='profile-info'>
-          <img className='profile-pic' src={image} alt='' />
-          <p className='profile-name'>{owner}</p>        
-        </div>
+        <p className='time-to-read'>2 min read</p>
         <div>
           <img 
             className='bookmark-item-icon' 
