@@ -1,15 +1,9 @@
 import React from 'react'
 import './PostHeader.css'
 
-const PostHeader = ({id,namee,owner,profilepic,image}) => {
+const PostHeader = ({id,namee,image}) => {
   return (
-    <div className="header-container">
-           
-      <div className="meta-info"> 
-        <img src={profilepic} alt='' />
-        <p>&nbsp;{owner}</p> 
-        <button className='follow-button' type="button">Follow</button>    
-      </div> 
+    <div className="header-container"> 
 
       <h1 className="title">{namee}</h1>     
 
