@@ -11,7 +11,6 @@ const Sidebar = ({ selectedMenu, setSidebarOpen }) => {
     { text: 'Bookmarks', path: '/bookmarks', icon: <img src={assets.save_article_icon} className='icons-in-sidebar' alt='' /> },
     { text: 'My Page', path: '/profile', icon: <img src={assets.profilepage_icon} className='icons-in-sidebar' alt='' /> },    
     { text: 'Settings', path: '/', icon: <img src={assets.settingspage_icon} className='icons-in-sidebar' alt='' /> },
-    { text: 'Dark Mode', path: '/', icon: <img src={assets.dark_mode_icon} className='icons-in-sidebar' alt='' /> },
     // Add more menu items as needed
   ]; 
 
@@ -32,4 +31,3 @@ const Sidebar = ({ selectedMenu, setSidebarOpen }) => {
 };
 
 export default Sidebar;
-
