@@ -25,11 +25,11 @@ const App = () => {
       {sidebarOpen && (
           <Box
             sx={{
-              width: '170px',
+              width: '180px',
               position: 'fixed',
-              top: '64px',
+              top: '70px',
               left: 0,
-              height: 'calc(100vh - 64px)',
+              height: 'calc(100vh - 80px)',
               zIndex: 1200,
               backgroundColor: 'white',
               boxShadow: 1,
@@ -40,7 +40,7 @@ const App = () => {
 
         <Box 
           sx={{ 
-            marginLeft: sidebarOpen ? '120px' : 0, 
+            marginLeft: sidebarOpen ? '140px' : 0, 
             marginRight: sidebarOpen ? '20px' : 0,
             flex: 1, 
             marginTop: '55px', 
