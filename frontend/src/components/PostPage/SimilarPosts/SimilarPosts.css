@@ -8,3 +8,9 @@
     margin-top: 18px;
     row-gap: 16px;
 }
+.similar-posts-list hr{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-top: 1px #7f7f7f;
+}
