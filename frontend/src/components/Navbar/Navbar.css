@@ -69,14 +69,49 @@
     gap: 3px;
 }
 .navbar-right img{
-    width: 29px;
-    height: 29px;
+    width: 28px;
+    height: 28px;
     align-items: center;
 }
 .navbar-right h2{
     font-family:'Zain', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     color: #333;
     align-items: center;
 }
+.dark-mode-icon{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+/* Wrapper for notification icon and dropdown */
+.notification-wrapper {
+    position: relative;
+}
+/* Notification dropdown styling */
+.notification-dropdown {
+    position: absolute;
+    top: 40px; /* Adjust the top value according to your layout */
+    right: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.notification-dropdown ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+} 
+.notification-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+} 
+.notification-dropdown li:hover {
+    background-color: #f4f4f4;
+}
+  
